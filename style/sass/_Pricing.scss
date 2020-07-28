@@ -1,0 +1,127 @@
+.Pricing{
+    padding: 50px 0;
+    background-color: rgba(238, 238, 238, 0.692);
+    h2{
+        text-align: center;
+        font-weight: bold;
+   }
+   p{
+       text-align: center;
+       margin-bottom: 0;
+   }
+   hr{
+       width: 100px;
+       height: 2px;
+       background-color: #000;
+       margin-top: 5px;
+       margin-bottom: 40px;
+   }
+   .content{
+       margin-bottom: 25px;
+       border: 1px solid #ddd;
+       border-top: 5px solid #ddd;
+       border-radius: 20px;
+       -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+       -ms-border-radius: 20px;
+       -o-border-radius: 20px;
+       .head{
+           background-color: #fff;
+           padding:10px 25px;
+           .lead{
+               font-size: 25px;
+               font-weight: bold;
+               text-align: center ;
+               width: 100%;
+           }
+           p{
+               text-align: center ;
+               display: inline-block;
+               width: 100%;
+               font-size: 22px;
+           }
+       }
+       .bod{
+           text-align: center;
+           padding: 20px 0;
+           ul{
+               li{
+                   padding: 10px 0;
+                   font-size: 15px;
+                   position: relative;
+                   opacity: 0.5;
+                   font-weight: bold;
+                   &::before{
+                       content: "\f00c";
+                       font-family: "FontAwesome";
+                       position: absolute;
+                       top: 0;
+                       padding: 8px 0 0px 0;
+                       margin: 0px 0px 0 -20px;
+                   }
+               }
+           }
+       }
+       .foot{
+           background-color: #fff;
+           text-align: center;
+           padding: 15px;
+           .btn{
+            position: relative;
+            border: 2px solid #4683df;
+            width: 142px;
+            height: 45px;
+            overflow: hidden;
+            .color{
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 00%;
+                height: 100%;
+                background-color: #4683df;
+            }
+            .text{
+                color: #4683df;
+                z-index: 2;
+                position: relative;
+            }
+        }
+       }
+    }
+       .con{
+           border-radius: 3px;
+           -webkit-border-radius: 3px;
+           -moz-border-radius: 3px;
+           -ms-border-radius: 3px;
+           -o-border-radius: 3px;
+           overflow: hidden;
+           border: 1px solid #4683df;
+           border-top: 5px solid #4683df;
+           .head{
+            background-color: #4683df;
+            color: #fff;
+        }
+        .bod{
+            background-color: #4683dfc7;
+            color: #fff;
+            ul{
+                li{
+                    opacity: 1;
+                }
+            }
+        }
+        .foot{
+            background-color: #4683df;
+            .btn{
+             border: 2px solid #fff;
+             .color{
+                 background-color: #fff;
+             }
+             .text{
+                 color: #fff;
+             }
+         }
+        }
+    }
+}

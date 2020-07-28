@@ -1,0 +1,196 @@
+$smallmobile:"(min-width: 320px)";
+$normallmobile:"(min-width: 576px)";
+$mobile:"(min-width: 768px)";
+$mediumscreen:"(min-width: 992px)";
+$largscreen:"(min-width:1200px)";
+
+// About
+
+@media#{$smallmobile}{
+    .About{
+        text-align: center;
+        .contnt{
+            padding-bottom: 30px;
+        }
+        .drop{
+            .cont{
+               span{
+                   position: relative;
+                   padding-left: 0px;
+                   &::before{
+                        content: "";
+                        position: absolute;
+                        width: 0px;
+                        height: 2px;
+                        background-color: #fff;
+                        top: 14px;
+                        left: 0;
+                   }
+               }
+            }
+            .con{
+                button{
+                    margin-top: 30px;
+                    float: none;
+                }
+            }
+        }
+    }
+}
+@media#{$mobile}{
+    .About{
+        text-align: left;
+        .contnt{
+            padding-bottom: 75px;
+        }
+        .drop{
+            .cont{
+               span{
+                   position: relative;
+                   padding-left: 30px;
+                   &::before{
+                        content: "";
+                        position: absolute;
+                        width: 25px;
+                        height: 2px;
+                        background-color: #fff;
+                        top: 14px;
+                        left: 0;
+                    }
+                }
+             }
+             .con{
+                 button{
+                    margin-top: 15px;
+                     float: right;
+                 }
+             }
+         }
+     }
+ }
+
+//  Services
+
+@media#{$smallmobile}{
+    .Services{
+        .col-md-5{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .inner{
+            padding: 0;
+            .col-md-6:last-child{
+                text-align: center;
+                padding: 25px 0 !important;
+                &::after{
+                    bottom: 0 !important;
+                }
+            }
+        }
+    }
+}
+@media#{$mobile}{
+    .Services{
+        .col-md-5{
+            display: flex;
+            align-items: center;
+            text-align: left;
+            justify-content: center;
+        }
+        .inner{
+            padding: 50px 0;
+            .col-md-6:last-child{
+                text-align: left;
+                padding: 80px 0 !important;
+                &::after{
+                    bottom: 40px !important;
+                }
+            }
+        }
+    }
+}
+
+//  testmonial
+
+@media#{$smallmobile}{
+    .Testmonial{
+        padding: 40px 0;
+       .con{
+           text-align: center;
+           width: 100%;
+           hr{
+               float: none;
+           }
+       }
+       .note{
+           top: 15px !important;
+       }
+       .slider{
+           .content{
+               h4{
+                   font-size: 20px;
+               }
+           }
+       }
+    }
+}
+
+@media#{$mobile}{
+    .Testmonial{
+       .con{
+           text-align: left;
+           width: 100%;
+           hr{
+               float: left;
+           }
+       }
+       .note{
+           top: 30px !important;
+       }
+       .slider{
+           .content{
+               h4{
+                   font-size: 20px;
+               }
+           }
+       }
+    }
+}
+
+//  contact
+
+@media#{$smallmobile}{
+    .contact{
+        h5{
+            margin: 15px 0 25px 0;
+        }
+    }
+}
+
+@media#{$mobile}{
+    .contact{
+        h5{
+            margin: 60px 0 25px 0;
+        }
+    }
+}
+
+//  work
+
+@media#{$smallmobile}{
+    .Work{
+        .con{
+            text-align: center !important;
+        }
+    }
+}
+
+@media#{$mobile}{
+    .Work{
+        .con{
+           text-align: left !important;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.intro{
+    background: url("../imgs/intro.jpg") no-repeat center center ;
+    background-size: cover;
+    .overlay{
+        background: rgba(00,00,00,0.75);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h1{
+            font-size: 80px;
+        }
+        .btn{
+            position: relative;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            width: 142px;
+            height: 45px;
+            overflow: hidden;
+            .color{
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 00%;
+                height: 100%;
+                background-color: #fff;
+            }
+            .text{
+                color: #fff;
+                z-index: 2;
+                position: relative;
+            }
+        }
+    }
+}

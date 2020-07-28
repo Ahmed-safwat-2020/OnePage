@@ -1,0 +1,1305 @@
+* {
+  font-family: 'Changa', sans-serif;
+}
+
+.intro {
+  background: url("../imgs/intro.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.intro .overlay {
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.intro .overlay h1 {
+  font-size: 80px;
+}
+
+.intro .overlay .btn {
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  width: 142px;
+  height: 45px;
+  overflow: hidden;
+}
+
+.intro .overlay .btn .color {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 00%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.intro .overlay .btn .text {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.navbar .navbar-brand {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.About {
+  padding-top: 75px;
+  /* This for loop creates the 	necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+}
+
+.About .lead {
+  font-size: 25px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.About p:not(.lead) {
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+
+.About .contnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 75px;
+}
+
+.About .contet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 0px;
+}
+
+.About .contet .card {
+  border: 0;
+}
+
+.About .contet .card .card-body {
+  padding: 20px 0 0 0;
+}
+
+.About .contet .card .card-body .card-text {
+  opacity: 1;
+}
+
+.About .contet .card .card-body .card-text span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 8px;
+  opacity: 1;
+}
+
+.About .contet .card .card-body .card-text p {
+  font-size: 15px;
+}
+
+.About .drop {
+  background-color: #4683df;
+  color: #fff;
+  padding: 60px 0;
+  margin-top: 20px;
+}
+
+.About .drop .cont span {
+  position: relative;
+  padding-left: 30px;
+}
+
+.About .drop .cont span::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  top: 14px;
+  left: 0;
+}
+
+.About .drop .con button {
+  float: right;
+  color: #fff;
+  border: 1px solid #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.About .drop .con button .color {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 00%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.About .drop .con button .text {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.About .progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+}
+
+.About .progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 7px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.About .progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.About .progress .progress-left {
+  left: 0;
+}
+
+.About .progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 7px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  border-color: #ffb43e;
+}
+
+.About .progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.About .progress .progress-right {
+  right: 0;
+}
+
+.About .progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.About .progress .progress-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  font-size: 36px;
+  text-align: center;
+  line-height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-weight: 300;
+}
+
+.About .progress .progress-value div {
+  margin-top: 10px;
+}
+
+.About .progress .progress-value span {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.About .progress[data-percentage="10"] .progress-right .progress-bar {
+  -webkit-animation: loading-1 1.5s linear forwards;
+          animation: loading-1 1.5s linear forwards;
+}
+
+.About .progress[data-percentage="10"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+          animation: 0;
+}
+
+.About .progress[data-percentage="20"] .progress-right .progress-bar {
+  -webkit-animation: loading-2 1.5s linear forwards;
+          animation: loading-2 1.5s linear forwards;
+}
+
+.About .progress[data-percentage="20"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+          animation: 0;
+}
+
+.About .progress[data-percentage="30"] .progress-right .progress-bar {
+  -webkit-animation: loading-3 1.5s linear forwards;
+          animation: loading-3 1.5s linear forwards;
+}
+
+.About .progress[data-percentage="30"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+          animation: 0;
+}
+
+.About .progress[data-percentage="40"] .progress-right .progress-bar {
+  -webkit-animation: loading-4 1.5s linear forwards;
+          animation: loading-4 1.5s linear forwards;
+}
+
+.About .progress[data-percentage="40"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+          animation: 0;
+}
+
+.About .progress[data-percentage="50"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.About .progress[data-percentage="50"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+          animation: 0;
+}
+
+.About .progress[data-percentage="60"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.About .progress[data-percentage="60"] .progress-left .progress-bar {
+  -webkit-animation: loading-1 1.5s linear forwards 1.5s;
+          animation: loading-1 1.5s linear forwards 1.5s;
+}
+
+.About .progress[data-percentage="70"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.About .progress[data-percentage="70"] .progress-left .progress-bar {
+  -webkit-animation: loading-2 1.5s linear forwards 1.5s;
+          animation: loading-2 1.5s linear forwards 1.5s;
+}
+
+.About .progress[data-percentage="80"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.About .progress[data-percentage="80"] .progress-left .progress-bar {
+  -webkit-animation: loading-3 1.5s linear forwards 1.5s;
+          animation: loading-3 1.5s linear forwards 1.5s;
+}
+
+.About .progress[data-percentage="90"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.About .progress[data-percentage="90"] .progress-left .progress-bar {
+  -webkit-animation: loading-4 1.5s linear forwards 1.5s;
+          animation: loading-4 1.5s linear forwards 1.5s;
+}
+
+.About .progress[data-percentage="100"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.About .progress[data-percentage="100"] .progress-left .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards 1.5s;
+          animation: loading-5 1.5s linear forwards 1.5s;
+}
+
+@-webkit-keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+  }
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+  }
+}
+
+@-webkit-keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+  }
+}
+
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+  }
+}
+
+@-webkit-keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+  }
+}
+
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+  }
+}
+
+@-webkit-keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+  }
+}
+
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+  }
+}
+
+@-webkit-keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+  }
+}
+
+.About .progress {
+  margin-bottom: 1em;
+}
+
+.Services {
+  padding-top: 75px;
+}
+
+.Services .col-md-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Services .col-md-5 h1 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.Services .col-md-5 p:not(.lead) {
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+.Services .col-md-5 .con {
+  margin-bottom: 20px;
+}
+
+.Services .col-md-5 .con button {
+  color: #000;
+  border: 1px solid #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.Services .col-md-5 .con button .color {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 00%;
+  height: 100%;
+  background-color: #000;
+}
+
+.Services .col-md-5 .con button .text {
+  color: #000;
+  z-index: 2;
+  position: relative;
+}
+
+.Services .content {
+  margin-bottom: 30px;
+}
+
+.Services .content i {
+  margin-bottom: 20px;
+  color: #4683df;
+}
+
+.Services .content p {
+  font-size: 13.5px;
+}
+
+.Services .inner {
+  background-color: #333;
+  margin-top: 50px;
+  padding: 50px 0;
+}
+
+.Services .inner .row {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.Services .inner .row .col-md-6:first-child {
+  padding: 15px;
+  height: 325px;
+  background: url("../imgs/services.png") no-repeat center center;
+  background-size: contain;
+}
+
+.Services .inner .row .col-md-6:last-child {
+  color: #fff;
+  padding: 80px 0;
+  position: relative;
+}
+
+.Services .inner .row .col-md-6:last-child::after {
+  content: "Ahmed Safwat";
+  position: absolute;
+  bottom: 40px;
+  right: 5px;
+}
+
+.Services .inner .row .col-md-6:last-child h3 {
+  font-weight: bold;
+}
+
+.Portfolio {
+  padding: 50px 0;
+}
+
+.Portfolio h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.Portfolio p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.Portfolio hr {
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin-top: 5px;
+}
+
+.Portfolio .content {
+  margin-top: 35px;
+}
+
+.Portfolio .content .img {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.Portfolio .content .img img {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.Portfolio .content .img img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.Portfolio .content .cont {
+  position: relative;
+}
+
+.Portfolio .content .cont::after {
+  position: absolute;
+  content: "";
+  border-width: 15px 15px 15px 15px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+  bottom: 63px;
+  left: 50%;
+  margin-left: -16px;
+}
+
+.Portfolio .content .cont p:first-of-type {
+  font-weight: bold;
+}
+
+.Portfolio .content .cont p:last-of-type {
+  opacity: 0.5;
+}
+
+.Portfolio .col-xs-6 {
+  width: 50%;
+}
+
+.Pricing {
+  padding: 50px 0;
+  background-color: rgba(238, 238, 238, 0.692);
+}
+
+.Pricing h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.Pricing p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.Pricing hr {
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.Pricing .content {
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-top: 5px solid #ddd;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.Pricing .content .head {
+  background-color: #fff;
+  padding: 10px 25px;
+}
+
+.Pricing .content .head .lead {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.Pricing .content .head p {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 22px;
+}
+
+.Pricing .content .bod {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.Pricing .content .bod ul li {
+  padding: 10px 0;
+  font-size: 15px;
+  position: relative;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+.Pricing .content .bod ul li::before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  padding: 8px 0 0px 0;
+  margin: 0px 0px 0 -20px;
+}
+
+.Pricing .content .foot {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.Pricing .content .foot .btn {
+  position: relative;
+  border: 2px solid #4683df;
+  width: 142px;
+  height: 45px;
+  overflow: hidden;
+}
+
+.Pricing .content .foot .btn .color {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 00%;
+  height: 100%;
+  background-color: #4683df;
+}
+
+.Pricing .content .foot .btn .text {
+  color: #4683df;
+  z-index: 2;
+  position: relative;
+}
+
+.Pricing .con {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #4683df;
+  border-top: 5px solid #4683df;
+}
+
+.Pricing .con .head {
+  background-color: #4683df;
+  color: #fff;
+}
+
+.Pricing .con .bod {
+  background-color: #4683dfc7;
+  color: #fff;
+}
+
+.Pricing .con .bod ul li {
+  opacity: 1;
+}
+
+.Pricing .con .foot {
+  background-color: #4683df;
+}
+
+.Pricing .con .foot .btn {
+  border: 2px solid #fff;
+}
+
+.Pricing .con .foot .btn .color {
+  background-color: #fff;
+}
+
+.Pricing .con .foot .btn .text {
+  color: #fff;
+}
+
+.Team {
+  padding: 50px 0;
+}
+
+.Team h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.Team p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.Team hr {
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.Team .content {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.Team .content img {
+  width: 100%;
+}
+
+.Team .content .overup {
+  display: none;
+}
+
+.Team .content .overup .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Team .content .overup .overlay .lead {
+  font-weight: bold;
+}
+
+.Team .content .overup .overlay hr {
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.Team .content .overup .overlay .social {
+  width: 100%;
+  text-align: center;
+}
+
+.Team .content .overup .overlay .social i {
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Team .content .overup .overlay .social i:hover {
+  color: #4683df;
+}
+
+.Testmonial {
+  background-color: #eee;
+  padding: 85px 0;
+}
+
+.Testmonial .col-md-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Testmonial .col-md-4 h2 {
+  font-weight: bold;
+}
+
+.Testmonial .col-md-4 p {
+  margin-bottom: 0;
+}
+
+.Testmonial .col-md-4 hr {
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  float: left;
+}
+
+.Testmonial .note {
+  text-align: center;
+  opacity: 0.5;
+  position: relative;
+  top: 30px;
+}
+
+.Testmonial .slider .swiper-container {
+  height: 200px;
+}
+
+.Testmonial .slider .swiper-container .swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Testmonial .slider .swiper-container .swiper-slide .content {
+  padding: 0 50px;
+}
+
+.contact {
+  padding: 50px 0;
+}
+
+.contact .content .intr {
+  display: block;
+}
+
+.contact .content .intr h2 {
+  font-weight: bold;
+}
+
+.contact .content .intr p {
+  margin-bottom: 0;
+}
+
+.contact .content .intr hr {
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  float: left;
+}
+
+.contact .content .addres {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.contact .content .addres p {
+  position: relative;
+  width: 55%;
+  padding: 0px 0 0px 45px;
+  font-weight: 700;
+}
+
+.contact .content .addres p::before {
+  position: absolute;
+  content: "\f015";
+  font-family: "FontAwesome";
+  opacity: 0.5;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #ddd;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 7px 0 0px;
+  top: -4px;
+  left: 0px;
+}
+
+.contact .content .phone p::before {
+  content: "\f095";
+}
+
+.contact .content .mobile p::before {
+  content: "\f10b ";
+}
+
+.contact .content .email p::before {
+  content: "\f0e0 ";
+}
+
+.contact h5 {
+  margin: 60px 0 25px 0;
+}
+
+.contact form .name {
+  position: relative;
+}
+
+.contact form .name i {
+  color: #ddd;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.contact form .name input {
+  padding: 0px 0 0 45px;
+}
+
+.contact form .email {
+  position: relative;
+}
+
+.contact form .email i {
+  color: #ddd;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.contact form .email input {
+  padding: 0px 0 0 45px;
+}
+
+.contact form .subject {
+  position: relative;
+}
+
+.contact form .subject i {
+  color: #ddd;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.contact form .subject input {
+  padding: 0px 0 0 45px;
+}
+
+.contact form .messege {
+  position: relative;
+}
+
+.contact form .messege i {
+  color: #ddd;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.contact form .messege textarea {
+  padding: 5px 0 0 45px;
+  height: 120px;
+}
+
+.Work {
+  background: url("../imgs/work.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 160px 0;
+  margin-top: 20px;
+  position: relative;
+  -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 0, 0 0, 0 60%);
+          clip-path: polygon(50% 100%, 100% 60%, 100% 0, 0 0, 0 60%);
+}
+
+.Work .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Work .overlay .cont h1 {
+  text-align: center;
+}
+
+.Work .overlay .con {
+  text-align: left;
+}
+
+.Work .overlay .con button {
+  color: #fff;
+  border: 1px solid #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.Work .overlay .con button .color {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 00%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.Work .overlay .con button .text {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.footer {
+  padding: 50px 0;
+}
+
+.footer .up i {
+  background-color: #4683df;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+@media (min-width: 320px) {
+  .About {
+    text-align: center;
+  }
+  .About .contnt {
+    padding-bottom: 30px;
+  }
+  .About .drop .cont span {
+    position: relative;
+    padding-left: 0px;
+  }
+  .About .drop .cont span::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    top: 14px;
+    left: 0;
+  }
+  .About .drop .con button {
+    margin-top: 30px;
+    float: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .About {
+    text-align: left;
+  }
+  .About .contnt {
+    padding-bottom: 75px;
+  }
+  .About .drop .cont span {
+    position: relative;
+    padding-left: 30px;
+  }
+  .About .drop .cont span::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    top: 14px;
+    left: 0;
+  }
+  .About .drop .con button {
+    margin-top: 15px;
+    float: right;
+  }
+}
+
+@media (min-width: 320px) {
+  .Services .col-md-5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Services .inner {
+    padding: 0;
+  }
+  .Services .inner .col-md-6:last-child {
+    text-align: center;
+    padding: 25px 0 !important;
+  }
+  .Services .inner .col-md-6:last-child::after {
+    bottom: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .Services .col-md-5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Services .inner {
+    padding: 50px 0;
+  }
+  .Services .inner .col-md-6:last-child {
+    text-align: left;
+    padding: 80px 0 !important;
+  }
+  .Services .inner .col-md-6:last-child::after {
+    bottom: 40px !important;
+  }
+}
+
+@media (min-width: 320px) {
+  .Testmonial {
+    padding: 40px 0;
+  }
+  .Testmonial .con {
+    text-align: center;
+    width: 100%;
+  }
+  .Testmonial .con hr {
+    float: none;
+  }
+  .Testmonial .note {
+    top: 15px !important;
+  }
+  .Testmonial .slider .content h4 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Testmonial .con {
+    text-align: left;
+    width: 100%;
+  }
+  .Testmonial .con hr {
+    float: left;
+  }
+  .Testmonial .note {
+    top: 30px !important;
+  }
+  .Testmonial .slider .content h4 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 320px) {
+  .contact h5 {
+    margin: 15px 0 25px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact h5 {
+    margin: 60px 0 25px 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .Work .con {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .Work .con {
+    text-align: left !important;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

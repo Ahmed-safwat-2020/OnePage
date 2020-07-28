@@ -1,0 +1,42 @@
+.Testmonial{
+    background-color: #eee;
+    padding: 85px 0;
+    .col-md-4{
+        display: flex;
+        align-items: center;
+        h2{
+            font-weight: bold;
+       }
+       p{
+           margin-bottom: 0;
+       }
+       hr{
+           width: 100px;
+           height: 2px;
+           background-color: #000;
+           margin-top: 5px;
+           margin-bottom: 40px;
+           float: left;
+       }
+    }
+   .note{
+       text-align: center;
+       opacity: 0.5;
+       position: relative;
+       top: 30px;
+   }
+   .slider{
+    .swiper-container{
+        height: 200px;
+        .swiper-slide{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .content{
+                padding: 0 50px;
+            }
+        }
+    }
+   }
+}

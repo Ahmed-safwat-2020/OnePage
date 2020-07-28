@@ -1,0 +1,77 @@
+.Services{
+    padding-top: 75px;
+   .col-md-5{
+       display: flex;
+       align-items: center;
+    h1{
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    p:not(.lead){
+        opacity: 0.5;
+        margin-bottom: 20px;
+    }
+    .con{
+        margin-bottom: 20px;
+        button{
+            color: #000;
+            border: 1px solid #000;
+            overflow: hidden;
+            position: relative;
+            .color{
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 00%;
+                height: 100%;
+                background-color: #000;
+            }
+            .text{
+                color: #000;
+                z-index: 2;
+                position: relative;
+            }
+        }
+    }
+   }
+    .content{
+        margin-bottom: 30px;
+        i{
+            margin-bottom: 20px;
+            color: #4683df;
+        }
+        p{
+            font-size: 13.5px;
+        }
+    }
+    .inner{
+        background-color: #333;
+        margin-top: 50px;
+        padding: 50px 0;
+        .row{
+            margin-right: 15px;
+            margin-left: 15px;
+            .col-md-6:first-child{
+                padding: 15px;
+                height: 325px;
+                background: url("../imgs/services.png") no-repeat center center;
+                background-size: contain;
+            }
+            .col-md-6:last-child{
+                color: #fff;
+                padding: 80px 0;
+                position: relative;
+                &::after{
+                    content: "Ahmed Safwat";
+                    position: absolute;
+                    bottom: 40px;
+                    right: 5px;
+                }
+                h3{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
