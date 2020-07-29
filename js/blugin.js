@@ -77,7 +77,7 @@ $(document).ready(function(){
             e.preventDefault()
             $("body,html").animate({
                 scrollTop:0
-            },500)
+            },1000)
         }
     }),
     $(window).scroll(function(){
@@ -95,7 +95,7 @@ $(document).ready(function(){
             e.preventDefault()
             $("body ,html").animate({
                 scrollTop:$("."+$(this).data("scroll")).offset().top - $("nav").height()
-            },500)
+            },1000)
         }
     }),
     $(window).scroll(function(){
